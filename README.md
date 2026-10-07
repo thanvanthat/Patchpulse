@@ -11,6 +11,7 @@ complaint spikes to the release and commit that likely caused them.
 cp .env.example .env
 make up        # db (Postgres 16 + pgvector), redis, api, worker
 make migrate   # create schema
+make seed-demo # generate fixtures/demo_game (5 planted bugs) and load releases + commits
 make test
 curl localhost:8000/health
 ```
